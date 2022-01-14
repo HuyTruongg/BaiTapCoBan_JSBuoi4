@@ -19,53 +19,76 @@
             <form>
                 <h2>Bài 1 - nhập vào 3 số nguyên</h2>
                 <div class="form-group">
-                    <input type="number" class="form-control" id="nguyen1" placeholder="Nhập số nguyên">
-                    <input type="number" class="form-control" id="nguyen2" placeholder="Nhập số nguyên">
-                    <input type="number" class="form-control" id="nguyen3" placeholder="Nhập số nguyên">
+                    <input type="number" class="form-control" id="numA" placeholder="Nhập số nguyên">
+                    <input type="number" class="form-control" id="numB" placeholder="Nhập số nguyên">
+                    <input type="number" class="form-control" id="numC" placeholder="Nhập số nguyên">
                 </div>
-                <button type="button" class="btn btn-primary" onclick="" id="sapxep">Sắp xếp</button>
+                <button type="button" class="btn btn-primary" id="sapxep">Sắp xếp</button>
             </form>
+            <p id="result"></p>
         </div>
     </div>
-
     <div class="container">
         <div class="w-50 py-5">
             <h2>Bài 2 - Chào hỏi</h2>
-            <h2>Bạn là ai:</h2>
             <ul>
                 <li class="type">
                     <input type="radio" name="selector" id="bo">
-                    <label for="bo">Bố</label>
+                    <label for="B">Bố</label>
+
                     <div class="check"></div>
                 </li>
+
                 <li class="type">
                     <input type="radio" name="selector" id="me">
-                    <label for="me">Mẹ</label>
+                    <label for="M">Mẹ</label>
                     <div class="check"></div>
                 </li>
+
                 <li class="type">
                     <input type="radio" name="selector" id="anh">
-                    <label for="anh">Anh Trai</label>
+                    <label for="A">Anh Trai</label>
                     <div class="check"></div>
                 </li>
+
                 <li class="type">
                     <input type="radio" name="selector" id="em">
-                    <label for="em">Em Gái</label>
+                    <label for="E">Em Gái</label>
                     <div class="check"></div>
                 </li>
             </ul>
+            <button type="button" class="btn btn-primary" id="hello">Gửi lời chào</button>
+            <p id="result2"></p>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
+    <div class="container">
+        <div class="w-50 py-5">
+            <form>
+                <h2>Bài 3 - xuất ra số lẻ và số chẵn</h2>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="num1" placeholder="Nhập số nguyên">
+                    <input type="number" class="form-control" id="num2" placeholder="Nhập số nguyên">
+                    <input type="number" class="form-control" id="num3" placeholder="Nhập số nguyên">
+                </div>
+                <button type="button" class="btn btn-primary" id="count">Đếm số chẵn - lẻ</button>
+            </form>
+            <p id="result3"></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="w-50 py-5">
+            <form>
+                <h2>Bài 4 - nhập 3 cạnh của tam giác</h2>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="canh1" placeholder="Nhập cạnh A">
+                    <input type="number" class="form-control" id="canh2" placeholder="Nhập cạnh B">
+                    <input type="number" class="form-control" id="canh3" placeholder="Nhập cạnh C">
+                </div>
+                <button type="button" class="btn btn-primary" id="tamGiac">Dự đoán</button>
+            </form>
+            <p id="result4"></p>
+        </div>
+    </div>
 
     <!-- BOOSTRAP  -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -74,6 +97,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
